@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Oswald&display=swap');
 
 html, body {
     margin:0;
@@ -20,4 +21,47 @@ body{
     text-align: center;
     font-family: 'Source Sans Pro', sans-serif;
 }
+
+#gaming-menu{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    font-size: x-large;
+}
+
+a.links {
+    font-size:10;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+  }
+  
+
+#wrapper {
+    width: 100vh;
+    margin: 1rem;
+}
+
+.obj {
+    offset-path: path('M.4 84.1s127.4 188 267.7 0 247.3 0 247.3 0');
+    offset-distance: 0;
+    animation: move 2000ms infinite alternate;
+    width: 1.2rem;
+    height: 1.2rem;
+    background-color:blueviolet;
+}
+
+.obj:nth-child(2) {
+    background-color:black;
+    margin-top: 3rem;
+    offset-rotate: 45deg;
+}
+
+@keyframes move {
+    0% {
+        offset-distance: 0%;
+    }
+    100% {
+    offset-distance: 100%;
+  }
+}
+
 
